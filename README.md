@@ -19,7 +19,7 @@ You have now successfully created your new GitHub Account.
 ## Creating Your First Repo
 Github make it easy to create your first repo  
 However we are going to follow the procedure to add a new repo that will work for the second and beyond  
-Simply click on your user profile picture on the top right followed by "Repositories"
+Simply click on your user profile picture on the top right followed by "Repositories"  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2A_GitHub_Repo.png)  
 
 Now click the Green "New" Button on the right side of the screen under your profile picture  
