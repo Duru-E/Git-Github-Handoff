@@ -38,7 +38,7 @@ Click the green "Create repository" button on the right and you are done.
 -------------------------------------------------------
 old notes to delete and stuff to do
 
-remember to spacees to make a new line
+remember two spaces to make a new line
 
 Out main file for the project
 
