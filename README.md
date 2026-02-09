@@ -7,14 +7,14 @@ Duru Elli, Jordan Stella
 
 Navigate to # [GitHub.com](https://github.com/)
 Enter the email you wish to sign up with and click the green "Sign up for GitHub" button
-![GitHun](https://duru-e.github.io/Git-Github-Handoff/1A_GitHub_Sign_up.png)
+![GitHub](https://duru-e.github.io/Git-Github-Handoff/1A_GitHub_Sign_up.png)
 
 Fillout the following page with a unique e-mail and username.
 When prompted, enter the validation code you have recived in the e-mail you signed up with
-![GitHun](https://duru-e.github.io/Git-Github-Handoff/1B_GitHub_Sign_up.png)
+![GitHub](https://duru-e.github.io/Git-Github-Handoff/1B_GitHub_Sign_up.png)
 
 You have now successfully created your new GitHub Account
-![GitHun](https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png)
+![GitHub](https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png)
 
 
 
