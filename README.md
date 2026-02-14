@@ -34,6 +34,34 @@ Click the green "Create repository" button on the right and you are done.
 
 
 
+-------------------------------------------------------
+
+## Git Workflow
+Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.
+![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)
+
+
+
+## Repositories
+
+## Staging
+
+## Commits
+
+## Push/Pull
+
+## Common Mistakes
+
+## CI/CD Connection
+
+
+
+-------------------------------------------------------
+
+Criteria:
+Scenario 1: Git & GitHub Handoff
+Audience: New Junior DevOps Engineer
+Focus on Git workflow, repositories, staging, commits, push/pull, common mistakes, and CI/CD connection. Tie them to real world scenarios that you maybe currently responsible for.
 
 -------------------------------------------------------
 old notes to delete and stuff to do
