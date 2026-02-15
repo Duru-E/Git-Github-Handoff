@@ -3,6 +3,20 @@
 Git & GitHub Handoff:  
 Duru Elli, Jordan Stella
 
+## Purpose
+This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work. 
+
+
+# Tools & Requirements
+
+• Git
+• GitHub account & access
+
+## Installing Git
+
+Please refer to GitHub's personalized installation guide of Git for different operating systems located [here](https://github.com/git-guides/install-git).
+
+
 ## Creating Your GitHub account
 
 Navigate to # [GitHub.com](https://github.com/)  
@@ -36,11 +50,23 @@ Click the green "Create repository" button on the right and you are done.
 
 -------------------------------------------------------
 
+# Basics
+
+## Git
+
+Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.
+
+## GitHub
+
+GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. 
+
 ## Git Workflow
 Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.
 ![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)
 
 
+
+# Workflow
 
 ## Repositories
 
@@ -50,7 +76,13 @@ Understanding the Git Workflow proccess, including the features and difficulties
 
 ## Push/Pull
 
-## Common Mistakes
+
+
+# Common Mistakes
+
+## Merge Conflicts
+
+##
 
 ## CI/CD Connection
 
@@ -62,6 +94,12 @@ Criteria:
 Scenario 1: Git & GitHub Handoff
 Audience: New Junior DevOps Engineer
 Focus on Git workflow, repositories, staging, commits, push/pull, common mistakes, and CI/CD connection. Tie them to real world scenarios that you maybe currently responsible for.
+
+Must show:
+• What you are doing
+• How to do it
+• Why it is done that way
+• What can go wrong and how to fix it
 
 -------------------------------------------------------
 old notes to delete and stuff to do
