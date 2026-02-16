@@ -14,8 +14,23 @@ This documentation is designed to be a guide for Juniors joining our DevOps team
 
 ## Installing Git
 
-Please refer to GitHub's personalized installation guide of Git for different operating systems located [here](https://github.com/git-guides/install-git).
+The Simplest way to instal Git to the Windows Enviroment is by opening an Elevated Power Shell
+Execute the following command inside the Evelvated Powershell
+```
+winget install --id Git.Git -e --source winget
+```
+![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3B_GitInstallPS.png)  
 
+For Windows Subsystem for Linux lanunch the console enviroment  
+Execute the following command to instal Git for the WSL Enviroment
+```
+sudo apt-get install git
+```
+![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3C_GitInstallWSL.png)  
+
+Please refer to GitHub's personalized installation guide of Git for additinal operating systems located [here](https://github.com/git-guides/install-git).
+
+-----------------------------------------------------------
 
 ## Creating Your GitHub account
 
