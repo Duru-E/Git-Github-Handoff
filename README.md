@@ -68,7 +68,7 @@ GitHub is a server where remote Git repositories are stored. It connects develop
 [GitHub Official DOCS](https://docs.github.com/en)  
 
 ## Git Workflow
-Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.
+Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.  
 ![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)  
 
 
