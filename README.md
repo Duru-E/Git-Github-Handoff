@@ -58,7 +58,7 @@ For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github
 
 ## Git
 
-Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.
+Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.  
 [Git Official DOCS](https://git-scm.com/docs)  
 ## GitHub
 
