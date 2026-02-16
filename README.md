@@ -97,6 +97,57 @@ For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.git
 
 ## Staging
 
+********  the AI says   *******  Keeping it simple ******  
+*** testing an screen shoots needed 8888************
+
+Understanding Staging in GitHub
+
+Staging in GitHub refers to the process of preparing changes before committing them to a repository. This is typically done using Git, the version control system that GitHub is built on.
+Steps to Stage Changes
+
+Create a Repository: First, you need a repository on GitHub. You can create one by clicking on the "New" button in your GitHub account.
+
+Clone the Repository: Use Git to clone your repository to your local machine. This can be done with the command:  
+```
+    git clone <repository-url>
+```
+
+Make Changes: Edit files in your local repository as needed.
+
+Stage Changes: To stage your changes, use the command:
+
+```
+    git add <file-name>
+```
+
+To stage all changes, use:
+
+```
+    git add .
+```
+   
+Commit Changes: After staging, commit your changes with:
+```
+    git commit -m "Your commit message"
+```
+
+Using GitHub Desktop   ************ ??????    we didnt talk about this in class, no need to intro it i think, thoughts  ?????  ******
+
+
+If you prefer a graphical interface, you can use GitHub Desktop:
+
+   Open GitHub Desktop and select your repository.
+   Make changes to your files.
+   In the "Changes" tab, you can see your modified files.
+   Check the boxes next to the files you want to stage.
+   Click "Commit to main" to finalize your changes.
+
+Summary
+
+Staging is an essential part of the Git workflow, allowing you to control what changes are included in your next commit. You can stage changes using command-line Git or through GitHub Desktop for a more visual approach.
+
+
+
 
 For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
 
