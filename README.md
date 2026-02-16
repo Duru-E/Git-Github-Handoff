@@ -99,6 +99,39 @@ For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.git
 
 ## Pull
 
+The first time we are working with a repo we will be required to use the Clone function
+to do so execute the following:   
+git clone https://github.com/<username>/<repository>.git
+
+```
+git clone https://github.com/Duru-E/Git-Github-Handoff.git
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4A_Pull.png)  
+
+The next time we want to work on the repo we can execute a Pull request to ensure we have the altest version
+This simple move into the repository and execute a pull request
+```
+git pull
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png)  
+
+We can also pull a specific branch to work on
+git pull <remote> <branch>
+as we have alreay clones our reposioty we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
+git pull origin <branch> 
+
+
+```
+git pull origin JaY-III-Merged-merge-into-merge
+```
+
+
+
+
+
+
+
+
 For more details on PULL see the [Official DOCS](https://github.com/git-guides/git-pull)  
 
 
