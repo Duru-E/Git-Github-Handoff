@@ -6,11 +6,14 @@ Duru Elli, Jordan Stella
 ## Purpose
 This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work. 
 
+----------------------------------------------
 
 # Tools & Requirements
 
 • Git
 • GitHub account & access
+
+-------------------------------------------
 
 ## Installing Git
 
@@ -46,9 +49,6 @@ You have now successfully created your new GitHub Account.
 ![GitHub](https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png)  
 
 For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)  
-
------------------------------------------------------------
-
 
 -------------------------------------------------------------------
 
@@ -94,6 +94,16 @@ Click the green "Create repository" button on the right and you are done.
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png)  
 
 For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+
+---------------------------------------------------------------
+
+## Pull
+
+For more details on PULL see the [Official DOCS](https://github.com/git-guides/git-pull)  
+
+
+-----------------------------------------------------------
+
 
 ## Staging
 
@@ -151,26 +161,35 @@ Staging is an essential part of the Git workflow, allowing you to control what c
 
 For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
 
+-----------------------------------------------------------
+
+
+## Push
+
+For more details on PUSH see the [Official DOCS](https://github.com/git-guides/git-push)  
+
+---------------------------------------------------------
+
 ## Commits
 
 For more details on COMMITS see the [Official DOCS](https://github.com/git-guides/git-commit)  
 
-## Push/Pull
 
-For more details on PUSH see the [Official DOCS](https://github.com/git-guides/git-push)  
-For more details on PULL see the [Official DOCS](https://github.com/git-guides/git-pull)  
+----------------------------------------------------------
 
----------------------------------------------------------
 
 
 # Common Mistakes
 Guess we make some stuff Up/ life what web searches say  
 
+--------------------------------------------------------------------
+
 ## Merge Conflicts
 
 For more details on RESOLVING MERGE CONFLICTS see the [Official DOCS](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
-##
+--------------------------------------------------------------
+
 
 ## CI/CD Connection
 
