@@ -16,6 +16,9 @@ When prompted, enter the validation code you have recived in the e-mail you sign
 You have now successfully created your new GitHub Account.  
 ![GitHub](https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png)  
 
+For more details see the [Offical DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+-----------------------------------------------------------
+
 ## Creating Your First Repo
 Github make it easy to create your first repo  
 However we are going to follow the procedure to add a new repo that will work for the second and beyond  
@@ -32,10 +35,46 @@ Optinaly you may choose the license to release your files under.
 Click the green "Create repository" button on the right and you are done.  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png)  
 
+For more details see the [Offical DOCS](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+-------------------------------------------------------------------
 
+## Staging
+
+This is so pointless
+if your a Software engineer read the fucking docs
+https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance
+
+------------------------------------------------------
+
+## Commmits
+
+https://github.com/git-guides/git-commit
+
+-------------------------------------------------------
+
+## Push/Pull
+https://github.com/git-guides/git-push
+https://github.com/git-guides/git-pull
+
+---------------------------------------------------------
+
+## Common Mistakes
+
+Guess we make some stuff Up/ life what web searches say
+
+-----------------------------------------------------------
+
+## CI/CD connection
+
+<insert story here> rehash the lecture i guess </insert story here> 
 
 
 -------------------------------------------------------
+• 8 - 12	pages
+• Authentic	screenshots	required
+• Step-by-step	professionaldocumentation
+
+
 old notes to delete and stuff to do
 
 remember two spaces to make a new line
