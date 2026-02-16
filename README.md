@@ -116,18 +116,32 @@ git pull
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png)  
 
 We can also pull a specific branch to work on
+Before we do that lets verify our current branch we are working in
+```
+git branch
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4C_Pull.png)  
+As expected we are working in Main.  
+
+
+Next we are going to change to the branch we want to work on
+git checkout <branch_name>
+then Verrify with git branch we have chaged to the intended branch
+```
+git checkout WorkInProgress
+git branch
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4D_Pull.png) 
+
+Finally we will ensure we are the most current version with the following
 git pull <remote> <branch>
-as we have alreay clones our reposioty we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
+As we have alreay cloned our reposioty we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
 git pull origin <branch> 
 
-
 ```
-git pull origin JaY-III-Merged-merge-into-merge
+git pull origin WorkInProgress
 ```
-
-
-
-
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4E_Pull.png) 
 
 
 
