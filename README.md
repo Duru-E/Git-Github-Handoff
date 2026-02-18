@@ -4,18 +4,21 @@ Git & GitHub Handoff:
 Duru Elli, Jordan Stella
 
 # Purpose
-This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work.    
-We will be going over the requirements, the basics explained, the necessary steps, common mistakes, 
-
-----------------------------------------------
+This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work.  
+  
+We will be going over the requirements, the basics explained, the importance of CI/CD, the necessary steps, and common mistakes.  
+  
+-----------------------------------------------------------
+  
 
 # Tools & Requirements
+
+## Requirements
 
 • Laptop/PC  
 • Latest version of Git installed  
 • GitHub account & access  
 
--------------------------------------------
 
 ## Installing Git
 
@@ -34,8 +37,6 @@ sudo apt-get install git
 ![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3C_GitInstallWSL.png)  
 
 Please refer to GitHub's personalized installation guide of Git for additional operating systems located [here](https://github.com/git-guides/install-git).
-
------------------------------------------------------------
 
 ## Creating Your GitHub account
 
@@ -91,10 +92,10 @@ Hotfix is
 # Our Workflow
 
 ## Repositories
+Repositories
 
-# Creating Your First Repo
-Github make it easy to create your first repo  
-However we are going to follow the procedure to add a new repo that will work for the second and beyond  
+GitHub makes it easy to create your first repository.  
+However, we are going to follow the procedure to add a new repo that will work for the second and beyond  
 Simply click on your user profile picture on the top right followed by "Repositories"  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2A_GitHub_Repo.png)  
 
