@@ -6,16 +6,34 @@ Duru Elli, Jordan Stella
 ## Purpose
 This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work. 
 
+----------------------------------------------
 
 # Tools & Requirements
 
 • Git
 • GitHub account & access
 
+-------------------------------------------
+
 ## Installing Git
 
-Please refer to GitHub's personalized installation guide of Git for different operating systems located [here](https://github.com/git-guides/install-git).
+The Simplest way to instal Git to the Windows Enviroment is by opening an Elevated Power Shell
+Execute the following command inside the Evelvated Powershell
+```
+winget install --id Git.Git -e --source winget
+```
+![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3B_GitInstallPS.png)  
 
+For Windows Subsystem for Linux lanunch the console enviroment  
+Execute the following command to instal Git for the WSL Enviroment
+```
+sudo apt-get install git
+```
+![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3C_GitInstallWSL.png)  
+
+Please refer to GitHub's personalized installation guide of Git for additinal operating systems located [here](https://github.com/git-guides/install-git).
+
+-----------------------------------------------------------
 
 ## Creating Your GitHub account
 
@@ -30,10 +48,36 @@ When prompted, enter the validation code you have recived in the e-mail you sign
 You have now successfully created your new GitHub Account.  
 ![GitHub](https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png)  
 
-For more details see the [Offical DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
------------------------------------------------------------
+For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)  
 
-## Creating Your First Repo
+-------------------------------------------------------------------
+
+## CI/CD connection
+
+# Basics
+
+## Git
+
+Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.  
+[Git Official DOCS](https://git-scm.com/docs)  
+## GitHub
+
+GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. 
+
+
+[GitHub Official DOCS](https://docs.github.com/en)  
+
+## Git Workflow
+Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.  
+![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)  
+
+
+
+# Workflow
+
+## Repositories
+
+# Creating Your First Repo
 Github make it easy to create your first repo  
 However we are going to follow the procedure to add a new repo that will work for the second and beyond  
 Simply click on your user profile picture on the top right followed by "Repositories"  
@@ -49,74 +93,150 @@ Optinaly you may choose the license to release your files under.
 Click the green "Create repository" button on the right and you are done.  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png)  
 
-For more details see the [Offical DOCS](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
--------------------------------------------------------------------
+For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
-## Staging
+---------------------------------------------------------------
 
-This is so pointless
-if your a Software engineer read the fucking docs
-https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance
+## Pull
 
-------------------------------------------------------
+The first time we are working with a repo we will be required to use the Clone function
+to do so execute the following:   
+git clone https://github.com/<username>/<repository>.git
 
-## Commmits
+```
+git clone https://github.com/Duru-E/Git-Github-Handoff.git
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4A_Pull.png)  
 
-https://github.com/git-guides/git-commit
+The next time we want to work on the repo we can execute a Pull request to ensure we have the altest version
+This simple move into the repository and execute a pull request
+```
+git pull
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png)  
 
--------------------------------------------------------
+We can also pull a specific branch to work on
+Before we do that lets verify our current branch we are working in
+```
+git branch
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4C_Pull.png)  
+As expected we are working in Main.  
 
-## Push/Pull
-https://github.com/git-guides/git-push
-https://github.com/git-guides/git-pull
 
----------------------------------------------------------
+Next we are going to change to the branch we want to work on
+git checkout <branch_name>
+then Verrify with git branch we have chaged to the intended branch
+```
+git checkout WorkInProgress
+git branch
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4D_Pull.png) 
 
-## Common Mistakes
+Finally we will ensure we are the most current version with the following
+git pull <remote> <branch>
+As we have alreay cloned our reposioty we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
+git pull origin <branch> 
 
-Guess we make some stuff Up/ life what web searches say
+```
+git pull origin WorkInProgress
+```
+![Pull](https://duru-e.github.io/Git-Github-Handoff/4E_Pull.png) 
+
+
+
+
+For more details on PULL see the [Official DOCS](https://github.com/git-guides/git-pull)  
+
 
 -----------------------------------------------------------
 
-## CI/CD connection
-
-<insert story here> rehash the lecture i guess </insert story here> 
-
--------------------------------------------------------
-
-# Basics
-
-## Git
-
-Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.
-
-## GitHub
-
-GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. 
-
-## Git Workflow
-Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.
-![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)
-
-
-
-# Workflow
-
-## Repositories
 
 ## Staging
 
+********  the AI says   *******  Keeping it simple ******  
+*** testing an screen shoots needed 8888************
+
+Understanding Staging in GitHub
+
+Staging in GitHub refers to the process of preparing changes before committing them to a repository. This is typically done using Git, the version control system that GitHub is built on.
+Steps to Stage Changes
+
+Create a Repository: First, you need a repository on GitHub. You can create one by clicking on the "New" button in your GitHub account.
+
+Clone the Repository: Use Git to clone your repository to your local machine. This can be done with the command:  
+```
+    git clone <repository-url>
+```
+
+Make Changes: Edit files in your local repository as needed.
+
+Stage Changes: To stage your changes, use the command:
+
+```
+    git add <file-name>
+```
+
+To stage all changes, use:
+
+```
+    git add .
+```
+   
+Commit Changes: After staging, commit your changes with:
+```
+    git commit -m "Your commit message"
+```
+
+Using GitHub Desktop   ************ ??????    we didnt talk about this in class, no need to intro it i think, thoughts  ?????  ******
+
+
+If you prefer a graphical interface, you can use GitHub Desktop:
+
+   Open GitHub Desktop and select your repository.
+   Make changes to your files.
+   In the "Changes" tab, you can see your modified files.
+   Check the boxes next to the files you want to stage.
+   Click "Commit to main" to finalize your changes.
+
+Summary
+
+Staging is an essential part of the Git workflow, allowing you to control what changes are included in your next commit. You can stage changes using command-line Git or through GitHub Desktop for a more visual approach.
+
+
+
+
+For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
+
+-----------------------------------------------------------
+
+
+## Push
+
+For more details on PUSH see the [Official DOCS](https://github.com/git-guides/git-push)  
+
+---------------------------------------------------------
+
 ## Commits
 
-## Push/Pull
+For more details on COMMITS see the [Official DOCS](https://github.com/git-guides/git-commit)  
+
+
+----------------------------------------------------------
 
 
 
 # Common Mistakes
+Guess we make some stuff Up/ life what web searches say  
+
+--------------------------------------------------------------------
 
 ## Merge Conflicts
 
-##
+For more details on RESOLVING MERGE CONFLICTS see the [Official DOCS](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+
+--------------------------------------------------------------
+
 
 ## CI/CD Connection
 
