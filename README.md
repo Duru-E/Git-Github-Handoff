@@ -128,24 +128,24 @@ Staging in GitHub is the preparation of changes before committing them to a repo
 
 First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
 ```
-    git clone <repository-url>
+git clone <repository-url>
 ```
   
 At this stage we will be making our changes to the code and files.  
   
 Now to stage our changes and set them in a prepared state, we will use the following command:
 ```
-    git add <file-name>
+git add <file-name>
 ```
   
 Or to stage all changes, use:
 ```
-    git add .
+git add .
 ```  
 
 Now that all the changes are staged, they are ready to be committed with:
 ```
-    git commit -m "Your commit message"
+git commit -m "Your commit message"
 ```  
 
 Staging is essential for Git workflow, it allows you to easily pick and choose which changes are ready to be committed and sent to the repository. 
