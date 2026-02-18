@@ -69,9 +69,11 @@ GitHub is a server where remote Git repositories are stored. It connects develop
 
 ## Git Workflow
 Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.  
-![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)  
+![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)
 
 
+
+Git Workflow 
 
 # Workflow
 
@@ -88,7 +90,7 @@ Now click the Green "New" Button on the right side of the screen under your prof
 
 Here we need to give our Repository a Unique name.  
 An optional Description.  
-The Visability, Public or Private.  
+The Visibility, Public or Private.  
 Optinaly you may choose the license to release your files under.  
 Click the green "Create repository" button on the right and you are done.  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png)  
@@ -108,7 +110,7 @@ git clone https://github.com/Duru-E/Git-Github-Handoff.git
 ```
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4A_Pull.png)  
 
-The next time we want to work on the repo we can execute a Pull request to ensure we have the altest version
+The next time we want to work on the repo we can execute a Pull request to ensure we have the latest version
 This simple move into the repository and execute a pull request
 ```
 git pull
@@ -126,7 +128,7 @@ As expected we are working in Main.
 
 Next we are going to change to the branch we want to work on
 git checkout <branch_name>
-then Verrify with git branch we have chaged to the intended branch
+then verify with git branch we have chaged to the intended branch
 ```
 git checkout WorkInProgress
 git branch
@@ -153,21 +155,23 @@ For more details on PULL see the [Official DOCS](https://github.com/git-guides/g
 
 
 ## Staging
-
-********  the AI says   *******  Keeping it simple ******  
-*** testing an screen shoots needed 8888************
+![Staging](https://mlim.ikim.nrw/_images/git_overview.svg)  
 
 Understanding Staging in GitHub
 
-Staging in GitHub refers to the process of preparing changes before committing them to a repository. This is typically done using Git, the version control system that GitHub is built on.
-Steps to Stage Changes
+Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we move which stage the changes are currently located. There are three local stages and one remote stage.
+
+First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
+```
+    git clone <repository-url>
+```
+
+The next 
 
 Create a Repository: First, you need a repository on GitHub. You can create one by clicking on the "New" button in your GitHub account.
 
 Clone the Repository: Use Git to clone your repository to your local machine. This can be done with the command:  
-```
-    git clone <repository-url>
-```
+
 
 Make Changes: Edit files in your local repository as needed.
 
@@ -187,19 +191,6 @@ Commit Changes: After staging, commit your changes with:
 ```
     git commit -m "Your commit message"
 ```
-
-Using GitHub Desktop   ************ ??????    we didnt talk about this in class, no need to intro it i think, thoughts  ?????  ******
-
-
-If you prefer a graphical interface, you can use GitHub Desktop:
-
-   Open GitHub Desktop and select your repository.
-   Make changes to your files.
-   In the "Changes" tab, you can see your modified files.
-   Check the boxes next to the files you want to stage.
-   Click "Commit to main" to finalize your changes.
-
-Summary
 
 Staging is an essential part of the Git workflow, allowing you to control what changes are included in your next commit. You can stage changes using command-line Git or through GitHub Desktop for a more visual approach.
 
