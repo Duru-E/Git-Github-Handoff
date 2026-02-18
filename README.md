@@ -3,36 +3,37 @@
 Git & GitHub Handoff:  
 Duru Elli, Jordan Stella
 
-## Purpose
-This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work. 
+# Purpose
+This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work.    
+We will be going over the requirements, the basics explained, the necessary steps, common mistakes, 
 
 ----------------------------------------------
 
 # Tools & Requirements
 
-• Laptop/PC
-• Git
-• GitHub account & access
+• Laptop/PC  
+• Latest version of Git installed  
+• GitHub account & access  
 
 -------------------------------------------
 
 ## Installing Git
 
-The Simplest way to instal Git to the Windows Enviroment is by opening an Elevated Power Shell
-Execute the following command inside the Evelvated Powershell
+The simplest way to install Git to the Windows Enviroment is by first opening an Elevated Power Shell
+Execute the following command inside the Elevated Powershell
 ```
 winget install --id Git.Git -e --source winget
 ```
 ![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3B_GitInstallPS.png)  
 
-For Windows Subsystem for Linux lanunch the console enviroment  
-Execute the following command to instal Git for the WSL Enviroment
+For Windows Subsystem for Linux launch the console enviroment  
+Execute the following command to install Git for the WSL Enviroment
 ```
 sudo apt-get install git
 ```
 ![GitInstalPS](https://duru-e.github.io/Git-Github-Handoff/3C_GitInstallWSL.png)  
 
-Please refer to GitHub's personalized installation guide of Git for additinal operating systems located [here](https://github.com/git-guides/install-git).
+Please refer to GitHub's personalized installation guide of Git for additional operating systems located [here](https://github.com/git-guides/install-git).
 
 -----------------------------------------------------------
 
@@ -42,7 +43,7 @@ Navigate to # [GitHub.com](https://github.com/)
 Enter the email you wish to sign up with and click the green "Sign up for GitHub" button.  
 ![GitHub](https://duru-e.github.io/Git-Github-Handoff/1A_GitHub_Sign_up.png)  
 
-Fillout the following page with a unique e-mail and username.  
+Fill out the following page with a unique e-mail and username.  
 When prompted, enter the validation code you have recived in the e-mail you signed up with.  
 ![GitHub](https://duru-e.github.io/Git-Github-Handoff/1B_GitHub_Sign_up.png)  
 
@@ -52,8 +53,6 @@ You have now successfully created your new GitHub Account.
 For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)  
 
 -------------------------------------------------------------------
-
-## CI/CD connection
 
 # Basics
 
@@ -86,6 +85,8 @@ Release is
 
 Hotfix is
 
+## CI/CD connection
+
 
 # Our Workflow
 
@@ -110,6 +111,55 @@ Click the green "Create repository" button on the right and you are done.
 For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
 ---------------------------------------------------------------
+
+
+
+## Staging
+![Staging](https://mlim.ikim.nrw/_images/git_overview.svg)  
+
+Understanding Staging in GitHub
+
+Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we move which stage the changes are currently located. There are three local stages and one remote stage.
+
+First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
+```
+    git clone <repository-url>
+```
+
+The next 
+
+Create a Repository: First, you need a repository on GitHub. You can create one by clicking on the "New" button in your GitHub account.
+
+Clone the Repository: Use Git to clone your repository to your local machine. This can be done with the command:  
+
+
+Make Changes: Edit files in your local repository as needed.
+
+Stage Changes: To stage your changes, use the command:
+
+```
+    git add <file-name>
+```
+
+To stage all changes, use:
+
+```
+    git add .
+```
+   
+Commit Changes: After staging, commit your changes with:
+```
+    git commit -m "Your commit message"
+```
+
+Staging is an essential part of the Git workflow, allowing you to control what changes are included in your next commit. You can stage changes using command-line Git or through GitHub Desktop for a more visual approach.
+
+
+
+
+For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
+
+-----------------------------------------------------------
 
 ## Pull
 
@@ -162,54 +212,6 @@ git pull origin WorkInProgress
 
 For more details on PULL see the [Official DOCS](https://github.com/git-guides/git-pull)  
 
-
------------------------------------------------------------
-
-
-## Staging
-![Staging](https://mlim.ikim.nrw/_images/git_overview.svg)  
-
-Understanding Staging in GitHub
-
-Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we move which stage the changes are currently located. There are three local stages and one remote stage.
-
-First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
-```
-    git clone <repository-url>
-```
-
-The next 
-
-Create a Repository: First, you need a repository on GitHub. You can create one by clicking on the "New" button in your GitHub account.
-
-Clone the Repository: Use Git to clone your repository to your local machine. This can be done with the command:  
-
-
-Make Changes: Edit files in your local repository as needed.
-
-Stage Changes: To stage your changes, use the command:
-
-```
-    git add <file-name>
-```
-
-To stage all changes, use:
-
-```
-    git add .
-```
-   
-Commit Changes: After staging, commit your changes with:
-```
-    git commit -m "Your commit message"
-```
-
-Staging is an essential part of the Git workflow, allowing you to control what changes are included in your next commit. You can stage changes using command-line Git or through GitHub Desktop for a more visual approach.
-
-
-
-
-For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
 
 -----------------------------------------------------------
 
