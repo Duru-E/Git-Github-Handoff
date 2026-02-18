@@ -55,6 +55,47 @@ For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github
 
 -------------------------------------------------------------------
 
+## SSH Authentication
+
+Correctly setting up SSH Authentication is vital for proper Git workflow.  
+To do so we must create our Public and Private SSH keypairs to allow remote access to GitHUb.  
+Navigate to .ssh located in your home directory, if the directory does not exist you may need to create it first  
+The following commands apply to both Powershell and WSL
+Replace usernamea@yexample.com with the e-mail associated with your GitHub account
+when prompted press [enter] x3 as we will accept the default values for this example
+
+```
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -C "usernamea@yexample.com"
+```
+
+Next we need to view and copy the Public Key we created  
+Then copy it into our Account SSH setting in Github  
+
+```
+cat id_ed25519.pub
+```
+![SSH](https://duru-e.github.io/Git-Github-Handoff/SSH_A.png)  
+
+Click your user Icon on the top right of GitHub -> Settings ->  
+On the following page on the left side click -> SSH and GPG keys ->  
+Finally on the right side the Green button ->  New SSH Key ->  
+Paste in the public key you just prior copied -> Add SSH key
+
+![SSH](https://duru-e.github.io/Git-Github-Handoff/SSH_B.png)  
+
+Finally we will test our key with the following command
+type yes when prompted
+```
+ssh -T git@github.com
+yes
+```
+
+![SSH](https://duru-e.github.io/Git-Github-Handoff/SSH_C.png)  
+
+----------------------------------------------------------
+
 # Basics
 
 ## Git
