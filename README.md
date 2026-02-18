@@ -10,6 +10,7 @@ This documentation is designed to be a guide for Juniors joining our DevOps team
 
 # Tools & Requirements
 
+• Laptop/PC
 • Git
 • GitHub account & access
 
@@ -71,11 +72,22 @@ GitHub is a server where remote Git repositories are stored. It connects develop
 Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.  
 ![Flow](https://www.transifex.com/hs-fs/hubfs/Imported_Blog_Media/Gitflow-workflow-1-1.png?width=960&height=544&name=Gitflow-workflow-1-1.png)
 
+Git Workflow is a thorough process generally used by large teams/projects to maintain their release standards. It includes more used branches than general GitHub Workflow, structured desig
+
+The branches included are: 'main', 'develop', 'feature/\*', 'release/\*', 'hotfix/\*'
+
+Main is
+
+Develop is
+
+Feature is
+
+Release is
+
+Hotfix is
 
 
-Git Workflow 
-
-# Workflow
+# Our Workflow
 
 ## Repositories
 
