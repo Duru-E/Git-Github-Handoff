@@ -341,36 +341,3 @@ In this example below, branch fell behind main and needed to Merge with Main bef
 ## Forgetting to Delete Merged Branches
 
 Forgetting to delete branches that have already been merged may not seem like a big issue, however, it builds up more work over time. Instead of immediately clearing the branch, leaving a branch active when it is inactive will cause clutter, confusion and could result in errors and more conflicts. Developers may accidentally continue work or merge onto an unused/outdated branch and only realize when it is too late. And, it will take more effort to identify and confirm that the branch is inactive rather than immediately deleting it after it is merged.  
-
--------------------------------------------------------
-
-Criteria:
-Scenario 1: Git & GitHub Handoff
-Audience: New Junior DevOps Engineer
-Focus on Git workflow, repositories, staging, commits, push/pull, common mistakes, and CI/CD connection. Tie them to real world scenarios that you maybe currently responsible for.
-
-Must show:
-• What you are doing
-• How to do it
-• Why it is done that way
-• What can go wrong and how to fix it
-
--------------------------------------------------------
-• 8 - 12	pages
-• Authentic	screenshots	required
-• Step-by-step	professionaldocumentation
-
-
-old notes to delete and stuff to do
-
-remember two spaces to make a new line
-
-Out main file for the project
-
-Cover download + instal of  git 
-Making github accocunt
-
-Then we need to document and make instructions of how to do everything you would do
-Both for git (local machine)
-and using github (using cloud)
-
