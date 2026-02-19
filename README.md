@@ -310,6 +310,14 @@ For more details on COMMITS see the [Official DOCS](https://github.com/git-guide
 # Common Mistakes
 
 
+*****************
+
+Branch fell behind main  
+Needed to Merge with Main before Push was allowed
+
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/MergeConflict_Fix.png)  
+
+
 ## Merge Conflicts
 
 For more details on RESOLVING MERGE CONFLICTS see the [Official DOCS](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
