@@ -243,7 +243,9 @@ git add .
 
 ![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_B.png)  
 
-Now that all the changes are staged, they are ready to be PUSHED with:  
+Now that all the changes are STAGED, we are ready to COMMIT the changes to the branch. After the is completed we will  PUSH this COMMIT upstream shorty afterwards:  
+
+******  Now in all uppercase.  ************  How should be highlight special words    ********  I am tryng to draw atttention to the skim readers that have done this before   **********  thats sort of why i have the random caps you talk about *************
 
 ```
 git commit -m "Your commit message"
