@@ -265,9 +265,10 @@ this is done with the following:
 git remote set-url origin git@github.com:<username>/<repo>.git
 the username is the REPO OWENERS username and may not be your own
 
-``
+```
  git remote set-url origin git@github.com:Duru-E/Git-Github-Handoff.git
-``
+```
+
 ![PUSH](https://duru-e.github.io/Git-Github-Handoff/Push_B.png)  
 
 
