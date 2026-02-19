@@ -174,7 +174,7 @@ For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.git
 
 The first time we are working with a repo we will be required to use the Clone function
 to do so execute the following:   
-git clone https://github.com/<username>/<repository>.git
+`git clone https://github.com/<username>/<repository>.git`
 
 ```
 git clone https://github.com/Duru-E/Git-Github-Handoff.git
@@ -187,7 +187,7 @@ git pull
 ```
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png)  
 
-We can also pull a specific branch to work on
+We can also pull a specific branch to work on  
 Before we do that let's verify our current branch we are working in
 ```
 git branch
@@ -205,10 +205,10 @@ git branch
 ```
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4D_Pull.png) 
 
-Finally we will ensure we are on the most current version with the following
-git pull <remote> <branch>
-As we have already cloned our repository we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
-git pull origin <branch> 
+Finally we will ensure we are on the most current version with the following  
+`git pull <remote> <branch>`  
+As we have already cloned our repository we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"  
+`git pull origin <branch> `  
 
 ```
 git pull origin WorkInProgress
@@ -233,16 +233,14 @@ First is the local repository which we retrieve by cloning the remote cloud repo
 git clone <repository-url>
 ```
   
-At this stage we will be making our changes to the code and files.  
-  
-Now to stage our changes and set them in a prepared state, we will use the following command:
+At this stage we will be making our changes to the code and files.    
+Now to stage our changes and set them in a prepared state, we will use the following command:  
 ```
 git add <file-name>
 ```
 
 ![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_A.png)  
 
-  
 Or to stage all changes, use: 
 
 ```
@@ -251,9 +249,8 @@ git add .
 
 ![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_B.png)  
 
-Now that all the changes are STAGED, we are ready to COMMIT the changes to the branch. After the is completed we will PUSH this COMMIT upstream shorty afterwards:  
-
-******  Now in all uppercase.  ************  How should be highlight special words    ********  I am tryng to draw atttention to the skim readers that have done this before   **********  thats sort of why i have the random caps you talk about *************
+Now that all the changes are Staged, we are ready to Commit the changes to the Branch.  
+After this completed we will Push this Commit upstream shortly afterwards:  
 
 ```
 git commit -m "Your commit message"
@@ -272,7 +269,7 @@ For more details on STAGING see the [Official DOCS](https://docs.github.com/en/e
 Before we can push we need to tell git the location to send the push to.  
 This is done with the following:
 
-git remote set-url origin git@github.com:<username>/<repo>.git
+`git remote set-url origin git@github.com:<username>/<repo>.git`  
 The username is the REPO OWNERS username and may not be your own
 
 ```
@@ -284,7 +281,7 @@ The username is the REPO OWNERS username and may not be your own
 
 After all your changes to the active branch have been made it is time to Push them to the repo  
 This is done with the following command:  
-git push origin <branch>
+`git push origin <branch>`  
 
 ```
 git push origin pushDemo
