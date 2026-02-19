@@ -160,41 +160,6 @@ For more details on REPOSITORY CREATION see the [Official DOCS](https://docs.git
 
 ---------------------------------------------------------------
 
-## Staging
-![Staging](https://github.com/Duru-E/Git-Github-Handoff/blob/Duru-E-patch-1-1/Staging.png)  
-
-Understanding Staging in GitHub
-
-Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we use a quick and simple command to add our changes to the Staging Area. We will start with the local repository in order to add changes. 
-
-First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
-```
-git clone <repository-url>
-```
-  
-At this stage we will be making our changes to the code and files.  
-  
-Now to stage our changes and set them in a prepared state, we will use the following command:
-```
-git add <file-name>
-```
-  
-Or to stage all changes, use:
-```
-git add .
-```  
-
-Now that all the changes are staged, they are ready to be committed with:
-```
-git commit -m "Your commit message"
-```  
-
-Staging is essential for Git workflow, it allows you to easily pick and choose which changes are ready to be committed and sent to the repository. 
-
-
-For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
-
------------------------------------------------------------
 
 ## Pull
 
@@ -248,14 +213,95 @@ For more details on PULL see the [Official DOCS](https://github.com/git-guides/g
 
 -----------------------------------------------------------
 
+## Staging
+![Staging](https://github.com/Duru-E/Git-Github-Handoff/blob/Duru-E-patch-1-1/Staging.png)  
+
+Understanding Staging in GitHub
+
+Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we use a quick and simple command to add our changes to the Staging Area. We will start with the local repository in order to add changes. 
+
+First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:
+```
+git clone <repository-url>
+```
+  
+At this stage we will be making our changes to the code and files.  
+  
+Now to stage our changes and set them in a prepared state, we will use the following command:
+```
+git add <file-name>
+```
+
+![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_A.png)  
+
+  
+Or to stage all changes, use: 
+
+```
+git add .
+```  
+
+![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_B.png)  
+
+Now that all the changes are STAGED, we are ready to COMMIT the changes to the branch. After the is completed we will  PUSH this COMMIT upstream shorty afterwards:  
+
+******  Now in all uppercase.  ************  How should be highlight special words    ********  I am tryng to draw atttention to the skim readers that have done this before   **********  thats sort of why i have the random caps you talk about *************
+
+```
+git commit -m "Your commit message"
+```
+![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_C.png)  
+
+Staging is essential for Git workflow, it allows you to easily pick and choose which changes are ready to be committed and sent to the repository. 
+
+
+For more details on STAGING see the [Official DOCS](https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance)  
+
+-----------------------------------------------------------
 
 ## Push
+
+Before we can push we need to tell git the location to send the push to.  
+this is done with the following:
+
+git remote set-url origin git@github.com:<username>/<repo>.git
+the username is the REPO OWENERS username and may not be your own
+
+```
+ git remote set-url origin git@github.com:Duru-E/Git-Github-Handoff.git
+```
+
+![PUSH](https://duru-e.github.io/Git-Github-Handoff/Push_B.png)  
+
+
+After all your changes to the active branch have been made it is time to Push them to the repo  
+This is done with the following command  
+git push origin <branch>
+
+```
+git push origin pushDemo
+```
+
+![PUSH](https://duru-e.github.io/Git-Github-Handoff/Push_A.png)  
+
 
 For more details on PUSH see the [Official DOCS](https://github.com/git-guides/git-push)  
 
 ---------------------------------------------------------
 
 ## Commits
+
+To complete a Commit from a branch into your main Repo you must first Select the branch in GitHub  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_A.png)  
+
+Then click on the Blue text stating X Commits ahead of main to review the changes  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_B.png)  
+
+Once the changes have been Validated you may cick -> Create pull request  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_D.png)  
+  
+
+
 
 For more details on COMMITS see the [Official DOCS](https://github.com/git-guides/git-commit)  
 
@@ -265,6 +311,14 @@ For more details on COMMITS see the [Official DOCS](https://github.com/git-guide
 
 
 # Common Mistakes
+
+
+*****************
+
+Branch fell behind main  
+Needed to Merge with Main before Push was allowed
+
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/MergeConflict_Fix.png)  
 
 
 ## Merge Conflicts
