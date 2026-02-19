@@ -248,6 +248,7 @@ Now that all the changes are staged, they are ready to be PUSHED with:
 ```
 git commit -m "Your commit message"
 ```
+![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_C.png)  
 
 Staging is essential for Git workflow, it allows you to easily pick and choose which changes are ready to be committed and sent to the repository. 
 
@@ -288,9 +289,15 @@ For more details on PUSH see the [Official DOCS](https://github.com/git-guides/g
 ## Commits
 
 To complete a Commit from a branch into your main Repo you must first Select the branch in GitHub  
-![PUSH](https://duru-e.github.io/Git-Github-Handoff/commit_A.png)  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_A.png)  
 
-Then
+Then click on the Blue text stating X Commits ahead of main to review the changes  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_B.png)  
+
+Once the changes have been Validated you may cick -> Create pull request  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_D.png)  
+  
+
 
 
 For more details on COMMITS see the [Official DOCS](https://github.com/git-guides/git-commit)  
