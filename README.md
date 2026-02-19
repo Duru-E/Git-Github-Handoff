@@ -105,7 +105,7 @@ Git is a distributed version control system (DVCS). This provides many features 
 
 ## GitHub
 
-GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. Developers are able to easily clone the cloud repository to their machine and begin working on their local repository. When they have completed their current goal, they are able to easily push their local repository back up to the cloud repository and update it seamlessly.
+GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. Developers are able to easily clone the cloud repository to their machine and begin working on their local repository. When they have completed their current goal, they are able to easily push their local repository back up to the cloud repository and update it seamlessly. Additionally, GitHub's website serves as a visual method of viewing the repository and all the files contained, making changes, pushing/pulling.  
 
 [GitHub Official DOCS](https://docs.github.com/en)  
 
@@ -129,8 +129,16 @@ Hotfix is when an important issue is found and needs to be fixed as soon as poss
 
 ## CI/CD connection
 
-CI/CD (Continuous Integration / Continuous Development) is a crucial practice deeply involved in our work process. 
-
+CI/CD (Continuous Integration / Continuous Development) is a crucial practice deeply involved in our work process. It comes with many principles, which we will frequently utilize within our workspace.  
+  
+A clear example of one of the main principles is Version Control simply through us utilizing Git. Since Git allows us to track all changes, review code easily, and allows rollbacks, and allows multiple developers to work altogether. It is essential for our workflow as it enables us to collaborate effectively and efficiently while maintaining history and easy rollbacks for potential issues we may come across.  
+  
+One of the most crucial ones is Continuous Integration. By committing code often, bugs will be found quicker, changes are manageable and easier to integrate. This is an important principle that must be constantly followed as it greatly impacts our efficiency and the overall health of our codebase by making code easier to work with at each step whether it is troubleshooting or validating.  
+  
+Another core principle is to Build in Quality, which is essential to ensure that we prioritize quality before releasing any code to the main branch. By doing quality assurance tests and bug fixing in the release/develop branch, we will be confirming that our code meets quality expectations and prevents issues from arising after the code is already released. This means we will always be doing pull requests and reviewing code before pushing and committing it to the next stage.  
+  
+"Done" means released. This principle ensures that when code is ready to be released, it is released. No time is wasted and the code is delivered to the next stage always. We will deliver good quality work at every stage and as soon as possible. When a commit is ready and has been properly reviewed, it will be moved onto the next stage without wasting any time. Response times will be short and allow our flow to be as efficient as possible.  
+  
 ---
 
 # Our Workflow
@@ -152,7 +160,7 @@ Now click the Green "New" Button on the right side of the screen under your prof
 Here we need to give our Repository a Unique name.  
 An optional Description.  
 The Visibility, Public or Private.  
-Optinaly you may choose the license to release your files under.  
+Optionally you may choose the license to release your files under.  
 Click the green "Create repository" button on the right and you are done.  
 ![Repo](https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png)  
 
@@ -173,14 +181,13 @@ git clone https://github.com/Duru-E/Git-Github-Handoff.git
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4A_Pull.png)  
 
 The next time we want to work on the repo we can execute a Pull request to ensure we have the latest version
-This simple move into the repository and execute a pull request
 ```
 git pull
 ```
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png)  
 
 We can also pull a specific branch to work on
-Before we do that lets verify our current branch we are working in
+Before we do that let's verify our current branch we are working in
 ```
 git branch
 ```
@@ -190,14 +197,14 @@ As expected we are working in Main.
 
 Next we are going to change to the branch we want to work on
 git checkout <branch_name>
-then verify with git branch we have chaged to the intended branch
+then verify with git branch we have changed to the intended branch
 ```
 git checkout WorkInProgress
 git branch
 ```
 ![Pull](https://duru-e.github.io/Git-Github-Handoff/4D_Pull.png) 
 
-Finally we will ensure we are the most current version with the following
+Finally we will ensure we are on the most current version with the following
 git pull <remote> <branch>
 As we have already cloned our repository we can replace the <remote> (https://github.com/Duru-E/Git-Github-Handoff.git) with "origin"
 git pull origin <branch> 
@@ -243,7 +250,7 @@ git add .
 
 ![STAGING](https://duru-e.github.io/Git-Github-Handoff/Staging_B.png)  
 
-Now that all the changes are STAGED, we are ready to COMMIT the changes to the branch. After the is completed we will  PUSH this COMMIT upstream shorty afterwards:  
+Now that all the changes are STAGED, we are ready to COMMIT the changes to the branch. After the is completed we will PUSH this COMMIT upstream shorty afterwards:  
 
 ******  Now in all uppercase.  ************  How should be highlight special words    ********  I am tryng to draw atttention to the skim readers that have done this before   **********  thats sort of why i have the random caps you talk about *************
 
@@ -262,10 +269,10 @@ For more details on STAGING see the [Official DOCS](https://docs.github.com/en/e
 ## Push
 
 Before we can push we need to tell git the location to send the push to.  
-this is done with the following:
+This is done with the following:
 
 git remote set-url origin git@github.com:<username>/<repo>.git
-the username is the REPO OWENERS username and may not be your own
+The username is the REPO OWNERS username and may not be your own
 
 ```
  git remote set-url origin git@github.com:Duru-E/Git-Github-Handoff.git
@@ -275,7 +282,7 @@ the username is the REPO OWENERS username and may not be your own
 
 
 After all your changes to the active branch have been made it is time to Push them to the repo  
-This is done with the following command  
+This is done with the following command:  
 git push origin <branch>
 
 ```
@@ -297,11 +304,9 @@ To complete a Commit from a branch into your main Repo you must first Select the
 Then click on the Blue text stating X Commits ahead of main to review the changes  
 ![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_B.png)  
 
-Once the changes have been Validated you may cick -> Create pull request  
+Once the changes have been Validated you may click -> Create pull request  
 ![COMMIT](https://duru-e.github.io/Git-Github-Handoff/Commit_D.png)  
   
-
-
 
 For more details on COMMITS see the [Official DOCS](https://github.com/git-guides/git-commit)  
 
@@ -312,29 +317,28 @@ For more details on COMMITS see the [Official DOCS](https://github.com/git-guide
 
 # Common Mistakes
 
-
-*****************
-
-Branch fell behind main  
-Needed to Merge with Main before Push was allowed
-
-![COMMIT](https://duru-e.github.io/Git-Github-Handoff/MergeConflict_Fix.png)  
-
-
 ## Merge Conflicts
 
 For more details on RESOLVING MERGE CONFLICTS see the [Official DOCS](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
 ## Committing to Main
 
+Committing directly to main is extremely unsafe and likely to cause more issues. The code in main is the source code for the entire project and an unvalidated addition may bring errors, bugs, vulnerabilities, and drop in quality. When the code in main is corrupted in any manner, it will drastically impact every other environment in the workspace. 
+
 ## Committing to Wrong Branches
+
+By accidentally comitting to the wrong branch and not confirming what branch you are currently on, workflow will be disrupted and delayed until the necessary cleanup or potential rollback is performed. This will cause further issues not only with the person who committed the new code but also those that were already performing work on the branch that had the code changed to. It will disrupt multiple environments and require more effort for the resolution and changes to be made, even moreso if the issue is not immediately caught. As in that case, the incorrect code will be slowly built upon by correct code that will most likely cause further issues and conflict errors.
 
 ## Forgetting to Pull before Push
 
 Simply forgetting to pull the latest version of the repository before releasing your version could cause many issues. For example, if an important bug-fix is released after you pulled your close and you forget to update, your version will not contain this bug-fix. This can cause major issues in the main repository and it could even cause further bugs due to possible conflicts. It is important to always pull the latest version of the repository to ensure your repository is not missing any key updates and will work efficiently with the current version.
 
+In this example below, branch fell behind main and needed to Merge with Main before Push was even allowed to process.  
+![COMMIT](https://duru-e.github.io/Git-Github-Handoff/MergeConflict_Fix.png)  
+
 ## Forgetting to Delete Merged Branches
 
+Forgetting to delete branches that have already been merged may not seem like a big issue, however, it builds up more work over time. Instead of immediately clearing the branch, leaving a branch active when it is inactive will cause clutter, confusion and could result in errors and more conflicts. Developers may accidentally continue work or merge onto an unused/outdated branch and only realize when it is too late. And, it will take more effort to identify and confirm that the branch is inactive rather than immediately deleting it after it is merged.  
 
 -------------------------------------------------------
 
