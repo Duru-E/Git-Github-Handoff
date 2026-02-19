@@ -1,7 +1,8 @@
 # [SLC-LABS.COM](https://slc-labs.com)
+  
+Duru Elli, Jordan Stella  
+[Git & GitHub Handoff](https://github.com/Duru-E/Git-Github-Handoff)  
 
-Git & GitHub Handoff:  
-Duru Elli, Jordan Stella
 
 # Purpose
 This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work.  
