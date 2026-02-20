@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+
+        .markdown-content {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #1e1e1e; /* Darker background for content */
+        }
+
+        .markdown-content h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: var(--text-tertiary);
+        }
+
+        .markdown-content h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: var(--text-tertiary);
+        }
+
+        .markdown-content p {
+            margin-bottom: 1em;
+        }
+
+        .markdown-content code {
+            background-color: var(--bg-tertiary);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+
+        .markdown-content pre {
+            background-color: var(--bg-tertiary);
+            padding: 1em;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1em 0;
+        }
+
+        .markdown-content a {
+            color: var(--button-bg);
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin-bottom: 1em;
+            padding-left: 2em;
+        }
+
+        .markdown-content blockquote {
+            border-left: 4px solid var(--border-color);
+            padding-left: 1em;
+            margin: 1em 0;
+            color: var(--text-secondary);
+        }
+
+        .markdown-content img {
+            max-width: 800px;
+            width: 100%; /* Ensures images are responsive */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="markdown-content">
+<h1><a href="https://slc-labs.com">SLC-LABS.COM</a></h1>
+<p>Duru Elli, Jordan Stella<br><a href="https://github.com/Duru-E/Git-Github-Handoff">Git &amp; GitHub Handoff</a><br><a href="https://github.com/Duru-E/Git-Github-Handoff/blob/main/Git_GitHub_handoff.pdf">PDF Download</a>  </p>
+<h1>Purpose</h1>
+<p>This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management &amp; workflow of our code, and important practices such as CI/CD which are closely involved in our work.  </p>
+<p>We will be going over the requirements, the basics explained, the importance of CI/CD, the necessary steps, and common mistakes.  </p>
+<hr>
+<h1>Tools &amp; Requirements</h1>
+<h2>Requirements</h2>
+<p>• Laptop/PC<br>• Latest version of Git installed<br>• GitHub account &amp; access  </p>
+<h2>Installing Git</h2>
+<p>The simplest way to install Git to the Windows Enviroment is by first opening an Elevated Power Shell<br>Execute the following command inside the Elevated Powershell</p>
+<pre><code>winget install --id Git.Git -e --source winget
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/3B_GitInstallPS.png" alt="GitInstalPS">  </p>
+<p>For Windows Subsystem for Linux launch the console enviroment<br>Execute the following command to install Git for the WSL Enviroment</p>
+<pre><code>sudo apt-get install git
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/3C_GitInstallWSL.png" alt="GitInstalPS">  </p>
+<p>Please refer to GitHub&#39;s personalized installation guide of Git for additional operating systems located <a href="https://github.com/git-guides/install-git">here</a>.</p>
+<h2>Creating Your GitHub account</h2>
+<p>Navigate to # <a href="https://github.com/">GitHub.com</a><br>Enter the email you wish to sign up with and click the green &quot;Sign up for GitHub&quot; button.<br><img src="https://duru-e.github.io/Git-Github-Handoff/1A_GitHub_Sign_up.png" alt="GitHub">  </p>
+<p>Fill out the following page with a unique e-mail and username.<br>When prompted, enter the validation code you have recived in the e-mail you signed up with.<br><img src="https://duru-e.github.io/Git-Github-Handoff/1B_GitHub_Sign_up.png" alt="GitHub">  </p>
+<p>You have now successfully created your new GitHub Account.<br><img src="https://duru-e.github.io/Git-Github-Handoff/1C_GitHub_Sign_up.png" alt="GitHub">  </p>
+<p>For more details on ACCOUNT CREATION see the <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">Official DOCS</a>  </p>
+<hr>
+<h2>SSH Authentication</h2>
+<p>Correctly setting up SSH Authentication is vital for proper Git workflow.<br>To do so we must create our Public and Private SSH keypairs to allow remote access to GitHUb.<br>Navigate to .ssh located in your home directory, if the directory does not exist you may need to create it first<br>The following commands apply to both Powershell and WSL<br>Replace <a href="mailto:usernamea@yexample.com">usernamea@yexample.com</a> with the e-mail associated with your GitHub account<br>when prompted press [enter] x3 as we will accept the default values for this example</p>
+<pre><code>mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -C &quot;usernamea@yexample.com&quot;
+</code></pre>
+<p>Next we need to view and copy the Public Key we created<br>Then copy it into our Account SSH setting in Github  </p>
+<pre><code>cat id_ed25519.pub
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/SSH_A.png" alt="SSH">  </p>
+<p>Click your user Icon on the top right of GitHub -&gt; Settings -&gt;<br>On the following page on the left side click -&gt; SSH and GPG keys -&gt;<br>Finally on the right side the Green button -&gt;  New SSH Key -&gt;<br>Paste in the public key you just prior copied -&gt; Add SSH key</p>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/SSH_B.png" alt="SSH">  </p>
+<p>Finally we will test our key with the following command<br>type yes when prompted</p>
+<pre><code>ssh -T git@github.com
+yes
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/SSH_C.png" alt="SSH">  </p>
+<hr>
+<h1>Basics</h1>
+<h2>Git</h2>
+<p>Git is a distributed version control system (DVCS). This provides many features such as to track the contribution and code changes of multiple collaborators, allow rollbacks to earlier version and view history, and also work from a local environment with an easy connection to the remote repository. Most of our work will be directly involved with Git.<br><a href="https://git-scm.com/docs">Git Official DOCS</a>  </p>
+<h2>GitHub</h2>
+<p>GitHub is a server where remote Git repositories are stored. It connects developers to a cloud repository regardless of timezone and distance. Developers are able to easily clone the cloud repository to their machine and begin working on their local repository. When they have completed their current goal, they are able to easily push their local repository back up to the cloud repository and update it seamlessly. Additionally, GitHub&#39;s website serves as a visual method of viewing the repository and all the files contained, making changes, pushing/pulling.  </p>
+<p><a href="https://docs.github.com/en">GitHub Official DOCS</a>  </p>
+<h2>Git Workflow</h2>
+<p>Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.<br><img src="https://duru-e.github.io/Git-Github-Handoff/Gitflow-Workflow.png" alt="Flow"></p>
+<p>Git Workflow is a thorough process generally used by large teams/projects to maintain their release standards. It includes more used branches than general GitHub Workflow due to the importance of good quality content and still be efficient as well. It is a clearly structured design where there are many branches for their own unique purpose which we will go over.</p>
+<p>The branches included are: &#39;main&#39;, &#39;develop&#39;, &#39;feature/*&#39;, &#39;release/*&#39;, &#39;hotfix/*&#39;</p>
+<p>Main is the most important branch, it is crucial to not send any updates that are possibly fault to this branch and even more important to never commit immediately to main branch. This is our production-ready branch where it must be functioning as intended with zero bugs intentionally released.</p>
+<p>Develop is the branch designated for branching &amp; integrating feature branches with active development. It is derived from the main branch. Here we confirm that the features will function properly and verify the code is consistent and reliable.</p>
+<p>Feature is designed for building new features, testing purposes, or bug-fixing. They are branched out from the develop branch and will be merged back into the develop branch again when it is complete and ready for the verification proccesses.</p>
+<p>Release is when our feature branches from the develop branches are verified and ready to undergo QA, bug fixes, and smaller updates. This is branched from a progressed develop branch, it is the last branch before the code is confidently integrated into main and ready for release. </p>
+<p>Hotfix is when an important issue is found and needs to be fixed as soon as possible. It is branched from main and then pushed back into main when the hotfix is ready to be deployed. It allows code production to be very quick and efficient and is designed to be a quick fix for whatever the issue is.</p>
+<h2>CI/CD connection</h2>
+<p>CI/CD (Continuous Integration / Continuous Development) is a crucial practice deeply involved in our work process. It comes with many principles, which we will frequently utilize within our workspace.  </p>
+<p>A clear example of one of the main principles is Version Control simply through us utilizing Git. Since Git allows us to track all changes, review code easily, and allows rollbacks, and allows multiple developers to work altogether. It is essential for our workflow as it enables us to collaborate effectively and efficiently while maintaining history and easy rollbacks for potential issues we may come across.  </p>
+<p>One of the most crucial ones is Continuous Integration. By committing code often, bugs will be found quicker, changes are manageable and easier to integrate. This is an important principle that must be constantly followed as it greatly impacts our efficiency and the overall health of our codebase by making code easier to work with at each step whether it is troubleshooting or validating.  </p>
+<p>Another core principle is to Build in Quality, which is essential to ensure that we prioritize quality before releasing any code to the main branch. By doing quality assurance tests and bug fixing in the release/develop branch, we will be confirming that our code meets quality expectations and prevents issues from arising after the code is already released. This means we will always be doing pull requests and reviewing code before pushing and committing it to the next stage.  </p>
+<p>&quot;Done&quot; means released. This principle ensures that when code is ready to be released, it is released. No time is wasted and the code is delivered to the next stage always. We will deliver good quality work at every stage and as soon as possible. When a commit is ready and has been properly reviewed, it will be moved onto the next stage without wasting any time. Response times will be short and allow our flow to be as efficient as possible.  </p>
+<hr>
+<h1>Our Workflow</h1>
+<h2>Repositories</h2>
+<p>Repositories are the main location where the code, files, and revision history is all stored. The source repository is generally the remote repository located on the cloud, and specifically in our case, stored in GitHub servers.  </p>
+<p>When you clone a repository, you have an identical copy of the repository where you can make your own changes and commit to your own repository without issues. You will also be able to push your local copy of the repistory up to the cloud repository you cloned it from. This is how you would push changes to the main codebase. We will be going further into detail with the upcoming sections. First, we will go over making your own repository.  </p>
+<p>GitHub makes it easy to create your first repository.<br>However, we are going to follow the procedure to add a new repo that will work for the second and beyond<br>Simply click on your user profile picture on the top right followed by &quot;Repositories&quot;<br><img src="https://duru-e.github.io/Git-Github-Handoff/2A_GitHub_Repo.png" alt="Repo">  </p>
+<p>Now click the Green &quot;New&quot; Button on the right side of the screen under your profile picture<br><img src="https://duru-e.github.io/Git-Github-Handoff/2B_GitHub_Repo.png" alt="Repo">  </p>
+<p>Here we need to give our Repository a Unique name.<br>An optional Description.<br>The Visibility, Public or Private.<br>Optionally you may choose the license to release your files under.<br>Click the green &quot;Create repository&quot; button on the right and you are done.<br><img src="https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png" alt="Repo">  </p>
+<p>For more details on REPOSITORY CREATION see the <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Official DOCS</a></p>
+<hr>
+<h2>Pull</h2>
+<p>The first time we are working with a repo we will be required to use the Clone function<br>to do so execute the following:<br><code>git clone https://github.com/&lt;username&gt;/&lt;repository&gt;.git</code></p>
+<pre><code>git clone https://github.com/Duru-E/Git-Github-Handoff.git
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/4A_Pull.png" alt="Pull">  </p>
+<p>The next time we want to work on the repo we can execute a Pull request to ensure we have the latest version</p>
+<pre><code>git pull
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/4B_Pull.png" alt="Pull">  </p>
+<p>We can also pull a specific branch to work on<br>Before we do that let&#39;s verify our current branch we are working in</p>
+<pre><code>git branch
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/4C_Pull.png" alt="Pull"><br>As expected we are working in Main.  </p>
+<p>Next we are going to change to the branch we want to work on<br>git checkout <branch_name><br>then verify with git branch we have changed to the intended branch</p>
+<pre><code>git checkout WorkInProgress
+git branch
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/4D_Pull.png" alt="Pull"> </p>
+<p>Finally we will ensure we are on the most current version with the following<br><code>git pull &lt;remote&gt; &lt;branch&gt;</code><br>As we have already cloned our repository we can replace the <remote> (<a href="https://github.com/Duru-E/Git-Github-Handoff.git">https://github.com/Duru-E/Git-Github-Handoff.git</a>) with &quot;origin&quot;<br><code>git pull origin &lt;branch&gt; </code>  </p>
+<pre><code>git pull origin WorkInProgress
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/4E_Pull.png" alt="Pull"> </p>
+<p>For more details on PULL see the <a href="https://github.com/git-guides/git-pull">Official DOCS</a>  </p>
+<hr>
+<h2>Staging</h2>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Staging.png" alt="Staging">  </p>
+<p>Understanding Staging in GitHub</p>
+<p>Staging in GitHub is the preparation of changes before committing them to a repository. We can do this easily through Git, where we use a quick and simple command to add our changes to the Staging Area. We will start with the local repository in order to add changes. </p>
+<p>First is the local repository which we retrieve by cloning the remote cloud repository to our machine using the following command:</p>
+<pre><code>git clone &lt;repository-url&gt;
+</code></pre>
+<p>At this stage we will be making our changes to the code and files.<br>Now to stage our changes and set them in a prepared state, we will use the following command:  </p>
+<pre><code>git add &lt;file-name&gt;
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Staging_A.png" alt="STAGING">  </p>
+<p>Or to stage all changes, use: </p>
+<pre><code>git add .
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Staging_B.png" alt="STAGING">  </p>
+<p>Now that all the changes are Staged, we are ready to Commit the changes to the Branch.<br>After this completed we will Push this Commit upstream shortly afterwards:  </p>
+<pre><code>git commit -m &quot;Your commit message&quot;
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Staging_C.png" alt="STAGING">  </p>
+<p>Staging is essential for Git workflow, it allows you to easily pick and choose which changes are ready to be committed and sent to the repository. </p>
+<p>For more details on STAGING see the <a href="https://docs.github.com/en/enterprise-server@3.17/admin/installing-your-enterprise-server/setting-up-a-github-enterprise-server-instance/setting-up-a-staging-instance">Official DOCS</a>  </p>
+<hr>
+<h2>Push</h2>
+<p>Before we can push we need to tell git the location to send the push to.<br>This is done with the following:</p>
+<p><code>git remote set-url origin git@github.com:&lt;username&gt;/&lt;repo&gt;.git</code><br>The username is the REPO OWNERS username and may not be your own</p>
+<pre><code> git remote set-url origin git@github.com:Duru-E/Git-Github-Handoff.git
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Push_B.png" alt="PUSH">  </p>
+<p>After all your changes to the active branch have been made it is time to Push them to the repo<br>This is done with the following command:<br><code>git push origin &lt;branch&gt;</code>  </p>
+<pre><code>git push origin pushDemo
+</code></pre>
+<p><img src="https://duru-e.github.io/Git-Github-Handoff/Push_A.png" alt="PUSH">  </p>
+<p>For more details on PUSH see the <a href="https://github.com/git-guides/git-push">Official DOCS</a>  </p>
+<hr>
+<h2>Commits</h2>
+<p>To complete a Commit from a branch into your main Repo you must first Select the branch in GitHub<br><img src="https://duru-e.github.io/Git-Github-Handoff/Commit_A.png" alt="COMMIT">  </p>
+<p>Then click on the Blue text stating X Commits ahead of main to review the changes<br><img src="https://duru-e.github.io/Git-Github-Handoff/Commit_B.png" alt="COMMIT">  </p>
+<p>Once the changes have been Validated you may click -&gt; Create pull request<br><img src="https://duru-e.github.io/Git-Github-Handoff/Commit_D.png" alt="COMMIT">  </p>
+<p>For more details on COMMITS see the <a href="https://github.com/git-guides/git-commit">Official DOCS</a>  </p>
+<hr>
+<h1>Common Mistakes</h1>
+<h2>Merge Conflicts</h2>
+<p>Merge conflicts are when two branches modify the same code and Git is unable to automatically merge the branches and forces manual input to resolve the issue. If this conflict issue is not resolved properly, it could possibly result in overwritten code, create new bugs, reintroduce fixed solutions, or remove features. This will inevitably incur more work for all of the developers involved and result in more delays for release. It will require solutions and possiblly rollbacks to resolve and will require one of the conflicting branches to be completely adapted to the conflicting branch. This issue can easily be prevented by properly discussing with fellow developers regarding the planned code changes, frequently pulling from the main branch, and following CI/CD by making small but frequent commits.</p>
+<p>For more details on RESOLVING MERGE CONFLICTS see the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">Official DOCS</a></p>
+<h2>Committing to Main</h2>
+<p>Committing directly to main is extremely unsafe and likely to cause more issues. The code in main is the source code for the entire project and an unvalidated addition may bring errors, bugs, vulnerabilities, and drop in quality. When the code in main is corrupted in any manner, it will drastically impact every other environment in the workspace since work is pulled and updated from main. If undetected, it will potentially corrupt the rest of the work being done and cause major delays when it is discovered by all the hotfixes and patches that will be necessary to resolve the root cause. It will additionally cause further issues when it comes to end users receiving the production-ready code from main, as it will not have been validated and gone through quality assurance. Thus, be sure to always confirm what branch you are changing and where you will be committing your changes to.</p>
+<h2>Committing to Wrong Branches</h2>
+<p>By accidentally comitting to the wrong branch and not confirming what branch you are currently on, workflow will be disrupted and delayed until the necessary cleanup or potential rollback is performed. This will cause further issues not only with the person who committed the new code but also those that were already performing work on the branch that had the code changed to. It will disrupt multiple environments and require more effort for the resolution and changes to be made, even moreso if the issue is not immediately caught. As in that case, the incorrect code will be slowly built upon by correct code that will most likely cause further issues and conflict errors. Be sure to confirm each time which branch you are using and where you are committing your changes.</p>
+<h2>Forgetting to Pull before Push</h2>
+<p>Simply forgetting to pull the latest version of the repository before releasing your version could cause many issues. For example, if an important bug-fix is released after you pulled your close and you forget to update, your version will not contain this bug-fix. This can cause major issues in the main repository and it could even cause further bugs due to possible conflicts. It is important to always pull the latest version of the repository to ensure your repository is not missing any key updates and will work efficiently with the current version. Always be certain to make sure you are using the most current version by using the command <code>git status</code>.</p>
+<p>In this example below, branch fell behind main and needed to Merge with Main before Push was even allowed to process.<br><img src="https://duru-e.github.io/Git-Github-Handoff/MergeConflict_Fix.png" alt="COMMIT">  </p>
+<h2>Forgetting to Delete Merged Branches</h2>
+<p>Forgetting to delete branches that have already been merged may not seem like a big issue, however, it builds up more work over time. Instead of immediately clearing the branch, leaving a branch active when it is inactive will cause clutter, confusion and could result in errors and more conflicts. Developers may accidentally continue work or merge onto an unused/outdated branch and only realize when it is too late. And, it will take more effort to identify and confirm that the branch is inactive rather than immediately deleting it after it is merged.  </p>
+
+    </div>
+</body>
+</html>
