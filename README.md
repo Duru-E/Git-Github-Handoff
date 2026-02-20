@@ -111,7 +111,7 @@ GitHub is a server where remote Git repositories are stored. It connects develop
 
 ## Git Workflow
 Understanding the Git Workflow proccess, including the features and difficulties associated with the proccess.  
-![Flow](Gitflow-Workflow.png/Gitflow-Workflow.png)
+![Flow](https://duru-e.github.io/Git-Github-Handoff/Gitflow-Workflow.png)
 
 Git Workflow is a thorough process generally used by large teams/projects to maintain their release standards. It includes more used branches than general GitHub Workflow due to the importance of good quality content and still be efficient as well. It is a clearly structured design where there are many branches for their own unique purpose which we will go over.
 
