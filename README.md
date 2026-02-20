@@ -2,7 +2,7 @@
   
 Duru Elli, Jordan Stella  
 [Git & GitHub Handoff](https://github.com/Duru-E/Git-Github-Handoff)  
-
+[PDF Download](https://github.com/Duru-E/Git-Github-Handoff/blob/main/Git_GitHub_handoff.pdf)  
 
 # Purpose
 This documentation is designed to be a guide for Juniors joining our DevOps team. It will teach how to utilize Git and Github, the management & workflow of our code, and important practices such as CI/CD which are closely involved in our work.  
