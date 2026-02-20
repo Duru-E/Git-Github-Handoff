@@ -53,8 +53,6 @@ You have now successfully created your new GitHub Account.
 
 For more details on ACCOUNT CREATION see the [Official DOCS](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)  
 
--------------------------------------------------------------------
-
 ## SSH Authentication
 
 Correctly setting up SSH Authentication is vital for proper Git workflow.  
