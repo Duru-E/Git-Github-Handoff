@@ -151,7 +151,8 @@ yes
 <p>When you clone a repository, you have an identical copy of the repository where you can make your own changes and commit to your own repository without issues. You will also be able to push your local copy of the repistory up to the cloud repository you cloned it from. This is how you would push changes to the main codebase. We will be going further into detail with the upcoming sections. First, we will go over making your own repository.  </p>
 <p>GitHub makes it easy to create your first repository.<br>However, we are going to follow the procedure to add a new repo that will work for the second and beyond<br>Simply click on your user profile picture on the top right followed by &quot;Repositories&quot;<br><img src="https://duru-e.github.io/Git-Github-Handoff/2A_GitHub_Repo.png" alt="Repo">  </p>
 <p>Now click the Green &quot;New&quot; Button on the right side of the screen under your profile picture<br><img src="https://duru-e.github.io/Git-Github-Handoff/2B_GitHub_Repo.png" alt="Repo">  </p>
-<p>Here we need to give our Repository a Unique name.<br>An optional Description.<br>The Visibility, Public or Private.<br>Optionally you may choose the license to release your files under.<br>Click the green &quot;Create repository&quot; button on the right and you are done.<br><img src="https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png" alt="Repo">  </p>
+<p>Here we need to give our Repository a Unique name, an optional Description, and the Visibility as Public or Private. <br>
+Optionally you may choose the license to release your files under.<br>Click the green &quot;Create repository&quot; button on the right and you are done.<br><img src="https://duru-e.github.io/Git-Github-Handoff/2C_GitHub_Repo.png" alt="Repo">  </p>
 <p>For more details on REPOSITORY CREATION see the <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Official DOCS</a></p>
 <hr>
 <h2>Pull</h2>
@@ -218,7 +219,16 @@ git branch
 <p>Once the changes have been Validated you may click -&gt; Create pull request<br><img src="https://duru-e.github.io/Git-Github-Handoff/Commit_D.png" alt="COMMIT">  </p>
 <p>For more details on COMMITS see the <a href="https://github.com/git-guides/git-commit">Official DOCS</a>  </p>
 <hr>
-<h1>Common Mistakes</h1>
+<h1>Common Issues</h1>
+
+<h2>Git Authentication Errors</h2>
+<p>If you are coming across the error from Git that says "Author identity unknown", this is a result of Git being unable to identify the user information for commits. You can solve this issue easily by typing the following two commands:</p>
+<pre><code> 
+git config --global user.name "Insert your username"
+git config --global user.email "your.email@example.com"
+</code></pre>
+
+
 <h2>Merge Conflicts</h2>
 <p>Merge conflicts are when two branches modify the same code and Git is unable to automatically merge the branches and forces manual input to resolve the issue. If this conflict issue is not resolved properly, it could possibly result in overwritten code, create new bugs, reintroduce fixed solutions, or remove features. This will inevitably incur more work for all of the developers involved and result in more delays for release. It will require solutions and possiblly rollbacks to resolve and will require one of the conflicting branches to be completely adapted to the conflicting branch. This issue can easily be prevented by properly discussing with fellow developers regarding the planned code changes, frequently pulling from the main branch, and following CI/CD by making small but frequent commits.</p>
 <p>For more details on RESOLVING MERGE CONFLICTS see the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">Official DOCS</a></p>
