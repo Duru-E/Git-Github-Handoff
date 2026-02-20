@@ -308,7 +308,7 @@ For more details on COMMITS see the [Official DOCS](https://github.com/git-guide
 
 
 
-# Common Mistakes
+# Common Issues
 
 ## Git Authentication Errors
 
